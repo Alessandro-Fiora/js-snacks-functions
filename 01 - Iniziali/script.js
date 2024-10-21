@@ -9,7 +9,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
  * @param {Array} originalArray the complete array
  * @returns {Array} an array of the first letters of the elements of the original array
  */
-function firstLetter(originalArray) {
+function firstLetterArray(originalArray) {
   // * dichiaro nuovo array vuoto
   const fistLetterArray = [];
   // * per ogni elemento dell'array originale pusho la prima lettera dell'elemento corrente nel nuovo array
@@ -21,7 +21,7 @@ function firstLetter(originalArray) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const newArray = firstLetter(names);
+const newArray = firstLetterArray(names);
 console.log(newArray);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
