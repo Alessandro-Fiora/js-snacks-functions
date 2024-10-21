@@ -1,5 +1,6 @@
 /* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
 
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE SENZA FILTER ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 const searchedLetter = "A";
 let newArray = [];
@@ -27,3 +28,7 @@ newArray = arrowFirstLetter(names, searchedLetter);
 console.log(newArray);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON FILTER ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// newArray = names.filter((name) => name.charAt(0) === searchedLetter);
+// console.log(newArray);
