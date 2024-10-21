@@ -27,6 +27,6 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON MAP ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON MAP ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ COMMENTARE TUTTO IL RESTO ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 newArray = names.map((name) => name.charAt(0));
 console.log(newArray);

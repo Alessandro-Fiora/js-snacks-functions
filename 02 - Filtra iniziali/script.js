@@ -29,6 +29,6 @@ console.log(newArray);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
-// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON FILTER ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON FILTER ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ COMMENTARE TUTTO IL RESTO ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // newArray = names.filter((name) => name.charAt(0) === searchedLetter);
 // console.log(newArray);
