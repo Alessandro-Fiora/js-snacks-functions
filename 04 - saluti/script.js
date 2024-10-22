@@ -3,9 +3,9 @@
 const name = "Mario";
 
 // Dichiara la funzione qui.
-const hi = (name) => alert(`Ciao ${name}`);
+const hi = (name) => `Ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
-hi(name);
+alert(hi(name));
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
