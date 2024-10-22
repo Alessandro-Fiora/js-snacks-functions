@@ -16,11 +16,15 @@ currentdate.getHours();
  * @param {*} currentdate the date object
  */
 const hiDate = (name, currentdate) => {
-  if (currentdate.getHours() < 13) alert(`Buongiorno ${name}`);
+  let greet;
+  if (currentdate.getHours() < 13) greet = `Buongiorno ${name}`;
   else if (currentdate.getHours() > 13 && currentdate.getHours() < 17)
-    alert(`Buon Pomeriggio ${name}`);
-  else alert(`Buonasera ${name}`);
+    greet = `Buon Pomeriggio ${name}`;
+  else greet = `Buonasera ${name}`;
+
+  return greet;
 };
 // Invoca la funzione qui e stampa il risultato in console
-hiDate(name, currentdate);
+alert(hiDate(name, currentdate));
+
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
