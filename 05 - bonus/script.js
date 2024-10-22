@@ -6,8 +6,6 @@ e buonasera se è sera (oltre le 17)
 */
 
 const name = "Mario";
-const currentdate = new Date();
-currentdate.getHours();
 
 // Dichiara la funzione qui.
 /**
@@ -15,8 +13,10 @@ currentdate.getHours();
  * @param {String} name the name to greet
  * @param {*} currentdate the date object
  */
-const hiDate = (name, currentdate) => {
+const hiDate = (name) => {
   let greet;
+  const currentdate = new Date();
+  currentdate.getHours();
   if (currentdate.getHours() < 13) greet = `Buongiorno ${name}`;
   else if (currentdate.getHours() > 13 && currentdate.getHours() < 17)
     greet = `Buon Pomeriggio ${name}`;
@@ -25,6 +25,6 @@ const hiDate = (name, currentdate) => {
   return greet;
 };
 // Invoca la funzione qui e stampa il risultato in console
-alert(hiDate(name, currentdate));
+alert(hiDate(name));
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
