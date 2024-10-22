@@ -14,9 +14,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 //   // * dichiaro nuovo array vuoto
 //   const fistLetterArray = [];
 //   // * per ogni elemento dell'array originale pusho la prima lettera dell'elemento corrente nel nuovo array
-//   originalArray.forEach((currentWord) =>
-//     fistLetterArray.push(currentWord.charAt(0))
-//   );
+//   originalArray.forEach((currentWord) => {
+//     fistLetterArray.push(currentWord.charAt(0));
+//   });
 //   return fistLetterArray;
 // }
 
@@ -28,5 +28,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON MAP ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ COMMENTARE TUTTO IL RESTO ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-newArray = names.map((name) => name.charAt(0));
+function firstLetterArray(originalArray) {
+  return names.map((name) => name.charAt(0));
+}
+
+newArray = firstLetterArray(names);
 console.log(newArray);
