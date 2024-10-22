@@ -31,9 +31,8 @@ let newArray = [];
 
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ SOLUZIONE CON FILTER ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ COMMENTARE TUTTO IL RESTO ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-const arrowFirstLetter = (array, searchedLetter) => {
-  return names.filter((name) => name.charAt(0) === searchedLetter);
-};
+const arrowFirstLetter = (array, searchedLetter) =>
+  names.filter((name) => name.charAt(0) === searchedLetter);
 
 newArray = arrowFirstLetter(names, searchedLetter);
 console.log(newArray);
