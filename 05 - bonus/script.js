@@ -5,6 +5,7 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
+// Variabile con nome da salutare
 const name = "Mario";
 
 // Dichiara la funzione qui.
@@ -16,9 +17,9 @@ const name = "Mario";
 const hiDate = (name) => {
   let greet;
   const currentdate = new Date();
-  currentdate.getHours();
-  if (currentdate.getHours() < 13) greet = `Buongiorno ${name}`;
-  else if (currentdate.getHours() > 13 && currentdate.getHours() < 17)
+  const currentHour = currentdate.getHours();
+  if (currentHour <= 13) greet = `Buongiorno ${name}`;
+  else if (currentHour > 13 && currentHour <= 17)
     greet = `Buon Pomeriggio ${name}`;
   else greet = `Buonasera ${name}`;
 
